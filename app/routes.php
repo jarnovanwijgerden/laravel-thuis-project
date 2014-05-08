@@ -14,5 +14,14 @@
 // hier kun je aangeven welke file die moet weergeven bij de index
 Route::get('/', function()
 {
-	return View::make('home.index');
+	$title = "L4 Basics";
+	return View::make('home.index')
+	->with('title', $title);
+});
+
+Route::get('about', function()
+{
+	$title = "About";
+	return View::make('home.about')
+	->with('title', $title);
 });

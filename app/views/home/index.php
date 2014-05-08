@@ -1,1 +1,0 @@
-<h2>Dit is de index.php</h2>
